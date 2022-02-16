@@ -11,6 +11,21 @@
   </head>
 
   <body>
+    <div class="navbar-expand-sm navbar-light navbar-lewagon">
+      <ul class="navbar-nav me-auto justify-content-between">
+          <li class="nav-item" id="home">
+            <a class="nav-link" href="/flats">Simple AirBnB</a>
+          </li>
+          <li class="nav-item d-flex">
+            <form action="/flats" method="get" class="form-inline d-flex mt-2 mb-2" style ="width: 280px">
+                <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+                <input type="search" name="search" value = "<%= params[:search] %>" placeholder="Search" class="form-control me-2" >
+                <input type="submit" value="Search" class="btn btn-outline-success">
+            </form>
+            <a class="btn btn-outline-primary m-2" href="/flats/new">Add flat</a>
+          </li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>

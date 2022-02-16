@@ -1,0 +1,51 @@
+<img class="flat-banner" src="<%= @flat.image_url %>" alt="apartment photo">
+<div class="container">
+  <div class="row d-flex show-row">
+    <div class="col-8">
+      <div class="flat-info">
+        <h1><%= @flat.name %></h1>
+        <h5><%= @flat.address %></h5>
+      </div>
+      <div class="flat-info mt-3">
+        <h3>A bit more about this flat...</h3>
+        <%= @flat.description %>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="flat-info">
+        <h5>Book this place!</h5>
+        <form>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">From</div>
+            </div>
+            <input type="text" class="form-control" placeholder="12/10/2017">
+          </div>
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">To:</div>
+            </div>
+            <input type="text" class="form-control" placeholder="12/18/2017">
+          </div>
+          <button type="submit" class="btn btn-success mt-2 full-width-btn">Book</button>
+        </form>
+      </div>
+      <div class="flat-info mt-3">
+        <h3>Details</h3>
+        <div class="d-flex">
+          <p class="me-3"><i class="fas fa-users me-1"></i> <%= @flat.number_of_guests %></p>
+          <p><i class="fas fa-euro-sign me-1"></i> <%= @flat.price_per_night %></p>
+        </div>
+      </div>
+      <div class="flat-info mt-3 d-flex justify-content-between">
+        <p class="mt-1">Share</p>
+        <div class="d-flex icons">
+          <p class="me-1"><i class="fab fa-facebook-square"></i></p>
+          <p class="me-1"><i class="fab fa-twitter-square"></i></p>
+          <p class="me-1"><i class="fab fa-pinterest-square"></i></p>
+          <p class="me-1"><i class="fas fa-envelope-square"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
