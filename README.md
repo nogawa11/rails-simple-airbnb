@@ -1,6 +1,11 @@
 # Simple AirBnB
 
 A simple AirBnB clone built to practice using Rails.
+
+[Link to app](https://nicole-simple-airbnb.herokuapp.com/)
+
+![8 Simple airbnb screenshot](https://user-images.githubusercontent.com/94948064/161418901-8101e6f7-1270-4638-bc28-b182212a9c11.png)
+
    
 ## Getting Started
 ### Setup
